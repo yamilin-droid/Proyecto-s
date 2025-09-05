@@ -1,17 +1,14 @@
 # include <iostream>
 
 int main() {
-    // Declaración e inicialización de un arreglo de 5 enteros
+  
     int arr[5] = {10, 20, 30, 40, 50};
 
-    // Acceder a elementos
-    std::cout << "Primer elemento: " << arr[0] << '\n'; // 10
-    std::cout << "Tercer elemento: " << arr[2] << '\n'; // 30
+    std::cout << "Primer elemento: " << arr[0] << '\n'; 
+    std::cout << "Tercer elemento: " << arr[2] << '\n'; 
 
-    // Modificar un elemento
-    arr[1] = 25; // ahora arr = {10, 25, 30, 40, 50}
+    arr[1] = 25;
 
-    // Recorrer el arreglo
     std::cout << "Contenido del arreglo: ";
     for (int i = 0; i < 5; ++i) {
         std::cout << arr[i];
@@ -19,9 +16,9 @@ int main() {
     }
     std::cout << '\n';
 
-    // Obtener el número de elementos (tamaño) usando sizeof
-    int n = sizeof(arr) / sizeof(arr[0]); // 5
+    int n = sizeof(arr) / sizeof(arr[0]); 
     std::cout << "Tamaño del arreglo: " << n << '\n';
 
     return 0;
+
 }
